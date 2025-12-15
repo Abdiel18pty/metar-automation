@@ -1,19 +1,14 @@
-# METAR Automation – Panamá
+# 🌦️ METAR Automation
 
-Automatización de descarga y almacenamiento de METAR horarios
-para aeropuertos de Panamá usando datos oficiales NOAA.
+Automatización de extracción de datos METAR de la NOAA cada hora.
 
-## Aeropuertos
-- MPTO
-- MPMG
-- MPPA
-- MPSM
-- MPDA
-- MPBO
+## 📊 ¿Qué hace?
+Este proyecto extrae automáticamente datos meteorológicos METAR cada hora y los guarda en formato DOCX.
 
-## Qué hace el sistema
-- Descarga METAR cada hora
-- Elimina duplicados
-- Crea un archivo Word diario
-- Guarda histórico por fecha
-- Corre automáticamente con GitHub Actions
+## 🚀 Características
+- Extracción automática cada hora
+- Datos de NOAA
+- Almacenamiento histórico en carpeta METAR/
+
+## 📅 Última actualización
+Los datos se actualizan automáticamente cada hora mediante GitHub Actions.
