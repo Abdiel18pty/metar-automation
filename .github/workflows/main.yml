@@ -9,6 +9,9 @@ jobs:
   metar:
     runs-on: ubuntu-latest
 
+    env:
+    GH_PAT: ${{ secrets.GH_PAT }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -31,5 +34,4 @@ jobs:
           git add METAR/
           git commit -m "Actualización METAR automática" || echo "Sin cambios"
           git push https://$GH_PAT@github.com/Abdiel18pty/metar-automation.git HEAD:main
-  env:
-    GH_PAT: ${{ secrets.GH_PAT }}
+  
